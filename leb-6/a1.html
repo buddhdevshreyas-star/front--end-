@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        student = [
+
+            {
+                name: "name1",
+                brach: "brach 1",
+                phone: 50,
+                id: "1"
+            },
+            {
+                name: "name 2",
+                brach: "brach 2",
+                phone: 91,
+                id: "2"
+            },
+            {
+                name: "name 3",
+                "brach": "brach 3",
+                "phone": 85,
+                "id": "3"
+            },
+            {
+                name: "name 4",
+                brach: "brach 4",
+                phone: 42,
+                id: "4"
+            },
+            {
+                name: "name 5",
+                brach: "brach 5",
+                phone: 48,
+                id: "5"
+            },
+            {
+                name: "name 6",
+                brach: "brach 6",
+                phone: 48,
+                id: "6"
+            },
+        ]
+
+        document.write("<table border=1>")
+        document.write("<thead>")
+        document.write("<tr>")
+        document.write("<th>name</th>")
+        document.write("<th>phone</th>")
+        document.write("<th>id</th>")
+        document.write("</tr>")
+        document.write("</thead>")
+            document.write("<tbody>")
+        for(let i=0;i<student.length;i++){
+            document.write("<tr>")
+               document.write("<td>"+student[i].id+"</td>")
+               document.write("<td>"+student[i].name+"</td>")
+               document.write("<td>"+student[i]. phone+"</td>")
+                document.write("</tr>")
+        }
+                document.write("</tbody>")
+    document.write("</table>")
+    </script>
+</body>
+
+</html>

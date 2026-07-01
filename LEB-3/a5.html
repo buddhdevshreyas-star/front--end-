@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci</title>
+</head>
+<body>
+
+<script>
+    let n = parseInt(prompt("Enter the number"));
+    let a = 0;
+    let b = 1;
+    for(let i = 2; i < n; i++) {
+        let sum = a + b;
+        document.write(sum + " ");
+        a = b;
+        b = sum;
+    }
+</script>
+
+</body>
+</html>

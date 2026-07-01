@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         let n=parseInt(prompt("enter number : "))
+        let k=n
+        let numcount=0
+        let m=n
+        let sum=0
+        while(n>0){
+            numcount++
+             n=parseInt(n/10)
+        }
+        while(k>0){
+            sum=sum+Math.pow(parseInt(k%10),numcount)
+            k=parseInt(k/10)
+        }
+        if(m==sum){
+            document.write("amstong number  ")
+        }
+        else{
+             document.write("not amstong number  ")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

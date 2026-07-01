@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let n=parseInt(prompt("enter a arry size : "));
+        let a=[];
+        let i,j,temp;
+       
+        for(i=0;i<n;i++){
+            a[i]=parseInt(prompt("enter a element : "));
+
+        }
+        document.write(a);
+       for(i=0;i<n;i++){
+          for(j=i+1;j<n;j++){
+            if(a[i]>a[j]){
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+
+            }
+
+          }
+        }
+        document.write("</br>")
+        document.write("sorted array---->>> ");
+        document.write("</br>")
+        document.write(a);
+
+
+    </script>
+    
+</body>
+</html>
